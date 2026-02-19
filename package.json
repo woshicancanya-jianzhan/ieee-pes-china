@@ -1,0 +1,15 @@
+{
+  "name": "ieee-pes-china",
+  "version": "1.0.0",
+  "description": "IEEE PES 变电站技术委员会（中国）成员通讯录",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["ieee", "pes", "china", "substation"],
+  "author": "IEEE PES 变电站技术委员会（中国）",
+  "license": "MIT"
+}

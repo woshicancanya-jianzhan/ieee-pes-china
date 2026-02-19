@@ -1,0 +1,325 @@
+{
+  "fields": [
+    {
+      "field_id": "fldfl4Uosd",
+      "field_name": "编号",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": true,
+      "is_synced": false,
+      "property": {
+        "auto_serial": {
+          "type": "auto_increment_number"
+        }
+      },
+      "type": 1005,
+      "ui_type": "AutoNumber"
+    },
+    {
+      "field_id": "fldzgtgYyG",
+      "field_name": "提交人",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1003,
+      "ui_type": "CreatedUser"
+    },
+    {
+      "field_id": "fldtRaRSXL",
+      "field_name": "提交时间",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "date_formatter": "yyyy/MM/dd"
+      },
+      "type": 1001,
+      "ui_type": "CreatedTime"
+    },
+    {
+      "field_id": "fldwjCjowp",
+      "field_name": "机构名称",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fld1MRmtc7",
+      "field_name": "姓名",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldrYdEiRK",
+      "field_name": "国籍",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldJopkqFk",
+      "field_name": "性别",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "options": [
+          {
+            "color": 0,
+            "id": "opt0hAnI9G",
+            "name": "男"
+          },
+          {
+            "color": 1,
+            "id": "optBkN8STe",
+            "name": "女"
+          }
+        ]
+      },
+      "type": 3,
+      "ui_type": "SingleSelect"
+    },
+    {
+      "field_id": "fld0yLboBt",
+      "field_name": "技术职称",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldyQaN8NL",
+      "field_name": "行政职务",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldsN6wwak",
+      "field_name": "从事专业",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldVriaB5z",
+      "field_name": "身份证号",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "formatter": "0"
+      },
+      "type": 2,
+      "ui_type": "Number"
+    },
+    {
+      "field_id": "fldNAixfDe",
+      "field_name": "学历",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "options": [
+          {
+            "color": 0,
+            "id": "opt0hAnI9G",
+            "name": "高中"
+          },
+          {
+            "color": 1,
+            "id": "optBkN8STe",
+            "name": "本科"
+          },
+          {
+            "color": 2,
+            "id": "opt3QlkMM8",
+            "name": "硕士"
+          },
+          {
+            "color": 4,
+            "id": "optbMPJGpP",
+            "name": "博士"
+          },
+          {
+            "color": 3,
+            "id": "optdMDvE63",
+            "name": "其他"
+          }
+        ]
+      },
+      "type": 3,
+      "ui_type": "SingleSelect"
+    },
+    {
+      "field_id": "fldubJNUvh",
+      "field_name": "学历-其他-补充内容",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldAHNDFw6",
+      "field_name": "毕业院校",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fldbnT6F1D",
+      "field_name": "工作单位",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": null,
+      "type": 1,
+      "ui_type": "Text"
+    },
+    {
+      "field_id": "fld1pYu6b2",
+      "field_name": "手机",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "formatter": "0"
+      },
+      "type": 2,
+      "ui_type": "Number"
+    },
+    {
+      "field_id": "fldgWkbR8e",
+      "field_name": "审核情况",
+      "is_extend": false,
+      "is_hidden": false,
+      "is_primary": false,
+      "is_synced": false,
+      "property": {
+        "options": [
+          {
+            "color": 0,
+            "id": "optX0w2X9b",
+            "name": "公开"
+          },
+          {
+            "color": 1,
+            "id": "optKwneSvQ",
+            "name": "不公开"
+          }
+        ]
+      },
+      "type": 3,
+      "ui_type": "SingleSelect"
+    }
+  ],
+  "records": [
+    {
+      "fields": {
+        "从事专业": [
+          {
+            "text": "电力",
+            "type": "text"
+          }
+        ],
+        "国籍": [
+          {
+            "text": "中国",
+            "type": "text"
+          }
+        ],
+        "姓名": [
+          {
+            "text": "张啊",
+            "type": "text"
+          }
+        ],
+        "学历": "本科",
+        "审核情况": "公开",
+        "工作单位": [
+          {
+            "text": "电力企业",
+            "type": "text"
+          }
+        ],
+        "性别": "男",
+        "手机": 133232323232,
+        "技术职称": [
+          {
+            "text": "无",
+            "type": "text"
+          }
+        ],
+        "提交人": [
+          {
+            "en_name": "Guest User 68246",
+            "id": "ou_fb0c4465fc6c86fac21e580f201fc9b3",
+            "name": "访客 68246"
+          }
+        ],
+        "提交时间": 1771408496000,
+        "机构名称": [
+          {
+            "text": "第一分委会",
+            "type": "text"
+          }
+        ],
+        "毕业院校": [
+          {
+            "text": "电力大学",
+            "type": "text"
+          }
+        ],
+        "编号": "1",
+        "行政职务": [
+          {
+            "text": "无",
+            "type": "text"
+          }
+        ],
+        "身份证号": 123456789123456
+      },
+      "record_id": "reclkf9jaF"
+    }
+  ],
+  "timestamp": "2026-02-19T02:31:58.019Z"
+}
