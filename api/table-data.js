@@ -15,14 +15,14 @@ const cache = {
     freshCacheTime: 0,
 };
 
-function sendRequest(options, postData = null) {
+function sendRequest(options, postData) {
     return new Promise((resolve, reject) => {
-        const req = https.请求(options, (res) => {
+        const req = https.request(options, (res) => {
             let data = '';
             res.on('data', (chunk) => { data += chunk; });
             res.on('end', () => {
                 try { resolve(JSON.parse(data)); }
-                catch (error) { reject(error); }
+                catch (e) { reject(e); }
             });
         });
         req.on('error', reject);
@@ -33,7 +33,7 @@ function sendRequest(options, postData = null) {
 
 async function getTenantAccessToken() {
     const now = Date.now();
-    if (cache.tenantAccessToken && cache.tokenExpireTime > now + 5 * 60 * 1000) {
+    if (cache.tenantAccessToken && cache.tokenExpireTime > now + 300000) {
         return cache.tenantAccessToken;
     }
     const options = {
@@ -87,8 +87,8 @@ async function getTableRecords(token) {
 function formatFieldValue(value, fieldType) {
     if (value === null || value === undefined) return '-';
     if (Array.isArray(value)) {
-        if (value[0]?.text) return value[0].text;
-        if (value[0]?.name) return value[0].name;
+        if (value[0] && value[0].text) return value[0].text;
+        if (value[0] && value[0].name) return value[0].name;
         return JSON.stringify(value);
     }
     if (fieldType === 1001 && typeof value === 'number') {
@@ -134,11 +134,10 @@ module.exports = async (req, res) => {
         };
         
         cache.tableData = formattedData;
-        cache.freshCacheTime = now + 30 * 1000;
+        cache.freshCacheTime = now + 30000;
         
         res.status(200).json(formattedData);
     } catch (error) {
-        console.error('API Error:', error);
         res.status(500).json({ error: error.message });
     }
 };
